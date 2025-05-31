@@ -30,10 +30,8 @@ import asyncio
 import websockets
 import json
 import os
-from dotenv import load_dotenv
 from bollinger_bands import BollingerBands  # ← Sua classe aqui
 
-load_dotenv()
 token = "USER_TOKEN"  # Consultar o dono do repo para saber o token
 
 async def test_client():
