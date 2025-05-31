@@ -34,10 +34,10 @@ from dotenv import load_dotenv
 from bollinger_bands import BollingerBands  # ← Sua classe aqui
 
 load_dotenv()
-token = os.getenv("USER_TOKEN")  # Defina isso no seu .env
+token = "USER_TOKEN"  # Consultar o dono do repo para saber o token
 
 async def test_client():
-    uri = "ws://localhost:8765"
+    uri = "wss://leveling-tool.fly.dev"
 
     async with websockets.connect(uri) as websocket:
         print("✅ Connected to WebSocket server")
